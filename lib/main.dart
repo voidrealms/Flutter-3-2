@@ -16,8 +16,8 @@ class _State extends State<MyApp> {
   bool _value1 = false;
   bool _value2 = false;
 
-  void _value1Changed(bool value) => setState(() => _value1 = value);
-  void _value2Changed(bool value) => setState(() => _value2 = value);
+  void _value1Changed(bool? value) => setState(() => _value1 = value!);
+  void _value2Changed(bool? value) => setState(() => _value2 = value!);
 
   @override
   Widget build(BuildContext context) {
